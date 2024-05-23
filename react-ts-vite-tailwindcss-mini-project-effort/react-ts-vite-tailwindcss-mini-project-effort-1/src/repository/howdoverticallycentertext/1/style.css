@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 100vh; /* adjust height as needed */
+  }
+  
+  .centered-text {
+    text-align: center;
+  }
+  

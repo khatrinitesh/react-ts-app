@@ -1,0 +1,24 @@
+.grid-tile {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .tile-content {
+    padding: 10px;
+  }
+  
+  .tile-content h3 {
+    margin: 0;
+  }
+  
+  .tile-content p {
+    margin: 5px 0;
+  }
+  
+  .grid-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

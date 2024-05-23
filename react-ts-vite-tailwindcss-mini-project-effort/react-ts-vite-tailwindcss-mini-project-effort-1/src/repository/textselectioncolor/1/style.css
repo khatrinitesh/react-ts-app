@@ -1,0 +1,9 @@
+:-webkit-selection{
+    color:white;
+    background-color: red;
+}
+
+::selection{
+    color:white;
+    background-color: red;
+}

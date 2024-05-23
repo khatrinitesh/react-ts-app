@@ -1,0 +1,20 @@
+/* SplitScreen.css */
+
+.split-screen {
+    display: flex;
+    height: 100vh; /* Make the split screen full height */
+  }
+  
+  .left-pane, .right-pane {
+    flex: 1; /* Each pane takes up equal space */
+    padding: 20px;
+  }
+  
+  .left-pane {
+    background-color: #f0f0f0; /* Background color for the left pane */
+  }
+  
+  .right-pane {
+    background-color: #ffffff; /* Background color for the right pane */
+  }
+  

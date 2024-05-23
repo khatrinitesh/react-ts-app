@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+  }
+  
+  .left {
+    float: left;
+    width: 70%; /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+  }
+  
+  .right {
+    float: left;
+    width: 30%; /* Adjust the width as needed */
+    background-color: #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+  }
+  
+  /* Clearfix to prevent collapsing margins */
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

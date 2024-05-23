@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Set your preferred width */
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar li:last-child {
+    border-bottom: none;
+  }
+  

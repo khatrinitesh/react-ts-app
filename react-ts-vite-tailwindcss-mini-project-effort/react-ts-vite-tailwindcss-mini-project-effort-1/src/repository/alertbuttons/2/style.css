@@ -1,0 +1,15 @@
+/* AlertButton.css */
+.success-button {
+    background-color: green;
+    color: white;
+}
+
+.error-button {
+    background-color: red;
+    color: white;
+}
+
+.warning-button {
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,9 @@
+.input-with-placeholder{
+    height: 40px;
+}
+
+.input-with-placeholder::placeholder {
+    border:2px solid red;
+    color: #d8db24; /* Adjust placeholder color as needed */
+  }
+  

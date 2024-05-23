@@ -1,0 +1,11 @@
+.equal-height-container {
+    display: flex;
+  }
+  
+  .equal-height {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+  }
+  

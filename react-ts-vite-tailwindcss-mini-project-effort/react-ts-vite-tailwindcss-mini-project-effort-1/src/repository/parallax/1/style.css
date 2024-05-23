@@ -1,0 +1,26 @@
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parallax-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  

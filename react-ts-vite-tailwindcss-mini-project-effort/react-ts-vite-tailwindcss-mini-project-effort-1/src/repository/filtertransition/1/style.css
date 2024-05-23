@@ -1,0 +1,18 @@
+.filter-transition-container {
+    width: 300px;
+  }
+  
+  .filter-transition-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .filter-transition-item {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .filter-transition-item.hidden {
+    opacity: 0;
+  }
+  

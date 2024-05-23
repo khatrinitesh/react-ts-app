@@ -1,0 +1,13 @@
+.hotspot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.hotspot-marker {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}

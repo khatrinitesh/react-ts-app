@@ -1,0 +1,15 @@
+/* SlideshowWithAudio.css */
+.slideshow-with-audio {
+    margin: 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}

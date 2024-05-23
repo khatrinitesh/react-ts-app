@@ -1,0 +1,16 @@
+.image-container {
+    display: inline-block;
+  }
+  
+  .flippable-image {
+    transition: transform 0.3s ease; /* Add a transition effect for smooth flipping */
+  }
+  
+  .flipped-horizontal {
+    transform: scaleX(-1); /* Flip horizontally by scaling the X-axis */
+  }
+  
+  .flipped-vertical {
+    transform: scaleY(-1); /* Flip vertically by scaling the Y-axis */
+  }
+  

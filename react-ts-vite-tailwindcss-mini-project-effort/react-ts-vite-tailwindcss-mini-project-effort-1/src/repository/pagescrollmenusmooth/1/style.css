@@ -1,0 +1,31 @@
+html,body{
+    height: 100%;
+}
+
+.smooth-scroll-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .smooth-scroll-menu a {
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .smooth-scroll-menu a.active {
+    color: blue;
+  }
+  
+  .sectionContent{
+    height: 100vh;
+    background-color: #ccc;
+  }
+
+  .flex-col{
+    flex-direction: column;
+  }

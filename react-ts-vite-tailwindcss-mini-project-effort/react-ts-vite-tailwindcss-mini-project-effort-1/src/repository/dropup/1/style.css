@@ -1,0 +1,42 @@
+.dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropup-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropup-content ul li {
+    padding: 10px;
+  }
+  
+  .dropup-content ul li:hover {
+    background-color: #ddd;
+  }
+  
+  .dropup.open .dropup-content {
+    display: block;
+  }
+  

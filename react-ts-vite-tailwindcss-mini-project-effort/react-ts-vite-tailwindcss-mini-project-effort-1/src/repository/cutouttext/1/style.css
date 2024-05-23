@@ -1,0 +1,76 @@
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 7vw;
+  background-image: url(https://raw.githubusercontent.com/andrew-sims/andrew-sims.github.io/master/images/codepen/aerial-ocean.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: inherit;
+  background-blend-mode: soft-light;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.cutoffstart {
+  transition: all 1s ease-in-out;
+  position: relative;
+  margin-top: 0.675;
+}
+.cutoffstart:before {
+  transition: all 700ms ease-in-out;
+  user-select: none;
+  content: attr(data-text);
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.cutoffstart:after {
+  transition: all 1s ease-in-out;
+  user-select: none;
+  content: attr(data-text);
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.cutoffend {
+  margin-top: 1.35em;
+}
+.cutoffend:before {
+  height: calc(8vw / 2.6);
+  top: -0.43em;
+}
+.cutoffend:after {
+  height: calc(8vw / 4.5);
+  top: -0.69em;
+}
+
+.stoptransitions {
+  transition: unset;
+}
+.stoptransitions:before {
+  transition: unset;
+}
+.stoptransitions:after {
+  transition: unset;
+}

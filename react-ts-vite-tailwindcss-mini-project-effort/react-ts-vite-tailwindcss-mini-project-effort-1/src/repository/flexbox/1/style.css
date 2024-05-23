@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex; /* Set the container as a flex container */
+  }
+  
+  .flex-item {
+    flex: 1; /* Make the items flexible, they will grow and shrink equally */
+    border: 1px solid #ccc; /* Add a border for visualization */
+    padding: 10px; /* Add padding for spacing */
+    margin: 5px; /* Add margin for spacing */
+  }
+  

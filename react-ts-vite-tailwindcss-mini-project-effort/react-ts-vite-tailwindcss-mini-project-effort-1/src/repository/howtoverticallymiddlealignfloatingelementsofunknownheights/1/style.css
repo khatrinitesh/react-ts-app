@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Optional: Adjust spacing between elements */
+    height: 100vh; /* Set container height as needed */
+  }
+  
+  .floating-element {
+    float: left;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 5px;
+  }
+  

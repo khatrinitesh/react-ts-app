@@ -1,0 +1,22 @@
+.truncate-ellipsis p {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .truncate-ellipsis-direction p {
+     width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+  }
+  
+  .truncate-line-clamp {
+   display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+    width: 250px;
+    overflow: hidden;
+  }

@@ -1,0 +1,30 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container.focused {
+    border-color: #007bff;
+}
+
+input[type='text'] {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://www.svgrepo.com/show/7109/search.svg');
+    /* replace with your search icon */
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container.focused .search-icon {
+    transform: scale(0.8);
+}

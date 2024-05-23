@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Styling for the pricing plan container */
+.pricing-plan {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Styling for the plan name */
+  .plan-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the plan price */
+  .plan-price {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the plan features */
+  .plan-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Styling for the subscribe button */
+  .subscribe-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #0056b3;
+  }
+  

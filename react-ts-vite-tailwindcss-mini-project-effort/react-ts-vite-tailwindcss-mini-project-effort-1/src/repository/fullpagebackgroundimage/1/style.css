@@ -1,0 +1,8 @@
+.full-page-background {
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Set the height to cover the entire viewport */
+}

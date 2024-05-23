@@ -1,0 +1,55 @@
+/* Global CSS */
+.marquee-scroll {
+    animation: marquee-scroll linear infinite;
+}
+
+.marquee-slide {
+    animation: marquee-slide linear infinite;
+}
+
+.marquee-alternate {
+    animation: marquee-alternate alternate infinite;
+}
+
+/* CSS Module */
+.marquee-scroll {
+    animation: marquee-scroll linear infinite;
+}
+
+.marquee-slide {
+    animation: marquee-slide linear infinite;
+}
+
+.marquee-alternate {
+    animation: marquee-alternate alternate infinite;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-alternate {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

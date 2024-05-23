@@ -1,0 +1,19 @@
+.draggable {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .draggable.dragging {
+    cursor: grabbing;
+  }
+  
+  

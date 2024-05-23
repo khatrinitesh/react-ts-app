@@ -1,0 +1,33 @@
+/* SwiperSlideshow.css */
+.swiper-slide-content {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* SlideshowGallery.css */
+.slideshow-gallery {
+    margin: 20px;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .swiper-slide-caption {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for caption */
+  }
+  

@@ -1,0 +1,23 @@
+.expanding-grid {
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    transition: height 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .expanding-grid.expanded {
+    height: auto;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .expanded-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  

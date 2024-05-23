@@ -1,0 +1,25 @@
+.vertical-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vertical-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .vertical-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .vertical-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .vertical-menu li a:hover {
+    color: #555;
+  }
+  
