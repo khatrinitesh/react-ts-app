@@ -28,3 +28,33 @@ export interface Comment {
   email: string;
   body: string;
 }
+// ALBUMS
+export interface Albums {
+  userId: number;
+  id: number;
+  title: string;
+}
+
+// BET 365
+export interface ApiDataBet365 {
+  soccer: string[];
+  tennis: string[];
+  basketball: string[];
+  cricket: string[];
+  esports: string[];
+}
+
+// FREE TO GAME
+export interface ApiFreeToGame{
+  id:number;
+  title:string;
+  thumbnail:string;
+  short_description:string;
+  game_url:string;
+  genre:string;
+  platform:string;
+  publisher:string;
+  developer:string;
+  release_date:string;
+  freetogame_profile_url:string;
+}
