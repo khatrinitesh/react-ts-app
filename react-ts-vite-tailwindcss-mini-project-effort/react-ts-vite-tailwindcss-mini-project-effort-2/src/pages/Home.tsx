@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import ApiComponent from '../components/apifetchdata/bet365/1';
 import ApiFGComponent from '../components/apifetchdata/freetogame/1';
+import LoaderComp from '../components/loader/1';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner title='Home' desc="Velit incididunt nostrud sunt incididunt incididunt voluptate laborum adipisicing labore ipsum voluptate enim in ea."/>
         <div className='container px-4 mx-auto'>
           <ApiFGComponent/>
+          <LoaderComp/>
         </div>
     </div>
   )
