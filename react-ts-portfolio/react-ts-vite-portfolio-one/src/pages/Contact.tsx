@@ -1,8 +1,7 @@
-import React from "react";
-// components
+import React, { FC } from "react";
 import Banner from "./../components/Banner";
 
-const Contact: React.FC = () => {
+const Contact: FC = () => {
   return (
     <div className="content">
       <Banner
@@ -49,4 +48,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

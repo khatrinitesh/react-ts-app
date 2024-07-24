@@ -7,7 +7,7 @@ interface SocialLink {
 }
 
 interface SocialIconProps {
-  link: SocialLink;
+  link: SocialLink[];
 }
 
 const SocialIcon: FC<SocialIconProps> = ({ link }) => (

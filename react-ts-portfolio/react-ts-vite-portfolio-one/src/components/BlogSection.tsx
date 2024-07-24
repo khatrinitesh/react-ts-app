@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { blogItems } from '../constants/Constants';
 
 interface BlogItem {
@@ -9,7 +9,7 @@ interface BlogItem {
   description: string;
 }
 
-const BlogSection: React.FC = () => {
+const BlogSection: FC = () => {
   return (
     <>
       <div className="flex my-[30px] h-full mx-auto justify-center items-center">
