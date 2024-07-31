@@ -17,9 +17,9 @@ const Header = () => {
             </Link>
           </div>
           <ul className="flex">
-            {links.map((val) => (
-              <NavLink
-                activeClassName="active"
+            {links.map((val,index) => (
+              <NavLink key={index}
+                activeclassname="active"
                 className="block p-2 text-white"
                 to={val.href}
               >

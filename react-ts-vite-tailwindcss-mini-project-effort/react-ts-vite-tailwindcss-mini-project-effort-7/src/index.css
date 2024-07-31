@@ -10,6 +10,112 @@
     height: 100%;
 }
 
-.active{
+:where(.active,.accordion-active){
     background-color: red;
 }
+
+/* Basic button styles */
+.button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.tertiary {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Animation styles */
+.animate-scale {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.animate-scale:hover {
+    transform: scale(1.1);
+}
+
+.animate-fade {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.animate-fade:hover {
+    opacity: 0.8;
+}
+
+.animate-rotate {
+    transition: transform 0.3s ease;
+}
+
+.animate-rotate:hover {
+    transform: rotate(15deg);
+}
+
+/* Base styles for the search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Animation styles */
+.animate-fade {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.animate-fade:hover {
+    opacity: 0.8;
+}
+
+.animate-slide {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.animate-slide:hover {
+    transform: translateX(10px);
+}
+
+.animate-expand {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.animate-expand:hover {
+    transform: scale(1.05);
+}
+
