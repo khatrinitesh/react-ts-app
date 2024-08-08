@@ -1,0 +1,39 @@
+.accordion-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-button.active {
+    background-color: #007bff; /* Change to your desired active color */
+    color: white;
+  }
+  
+  .accordion-button:hover {
+    background-color: #ddd;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .accordion-content.open {
+    max-height: 200px; /* Adjust as needed */
+    opacity: 1;
+  }
+  
