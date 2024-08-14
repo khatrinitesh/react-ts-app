@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html{
+    height: 100%;
+}
+
+.navbar ul li .active{
+    background-color: #ef4444;
+}
+
+.container-title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-right: 40%;
+  }
+  
+  .tab-1 {
+    box-shadow: inset 105px 0 0 -100px #fdc48f;
+    background-color: rgba(253, 196, 143, 0.1);
+  }
+  .tab-1:hover:not(.expanded) {
+    background-color: rgba(253, 196, 143, 0.4);
+  }
+  
+  .tab-2 {
+    box-shadow: inset 105px 0 0 -100px #b5b3fb;
+    background-color: rgba(181, 179, 251, 0.1);
+  }
+  .tab-2:hover:not(.expanded) {
+    background-color: rgba(181, 179, 251, 0.4);
+  }
+  
+  .tab-3 {
+    box-shadow: inset 105px 0 0 -100px #fdb4c0;
+    background-color: rgba(253, 180, 192, 0.1);
+  }
+  .tab-3:hover:not(.expanded) {
+    background-color: rgba(253, 180, 192, 0.4);
+  }
+  
+  .accordion-tab {
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    width: 14.375rem;
+    position: relative;
+  }
+  .accordion-tab:before {
+    font-family: "Material Icons";
+    font-size: 1.875rem;
+    content: "add";
+    color: #454545;
+    position: absolute;
+    top: 0.625rem;
+    left: 1.1875rem;
+    transition: transform 0.5s ease-out;
+  }
+  .accordion-tab + .accordion-tab {
+    margin-top: 0.5rem;
+  }
+  .accordion-tab__details {
+    max-height: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 14.375rem;
+    transition: max-height 0.5s, margin 0.5s;
+  }
+  .details-list__item + .details-list__item {
+    margin-top: 1.25rem;
+  }
+  
+  .accordion-tab.expanded:before {
+    transform: rotate(45deg);
+  }
+  .accordion-tab.expanded .accordion-tab__label {
+    font-weight: 900;
+    background-color: red;
+  }
+  .accordion-tab.expanded .accordion-tab__details {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
