@@ -13,3 +13,10 @@ export type ButtonPrimaryProps ={
     onClick:() => void;
     title:string;
 }
+
+// Define a type for the error object
+export type RouteError ={
+    statusText?: string;
+    message: string;
+  }
+  
