@@ -3,9 +3,7 @@ import "./style.css";
 
 const CustomApp = () => {
   return (
-    <>async (params:type) => {
-      
-    }
+    <>
       <Parallax />
     </>
   );

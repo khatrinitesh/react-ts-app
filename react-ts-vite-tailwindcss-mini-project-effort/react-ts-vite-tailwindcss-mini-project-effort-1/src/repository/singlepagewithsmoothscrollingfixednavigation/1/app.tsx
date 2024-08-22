@@ -34,38 +34,43 @@ const sections: Section[] = [
   };
 
 
-const SectionApp:React.FC = () => {
-  return (
-    <>
-      <nav className="navbar">
-        <ul>
-          {sections.map((section) => (
-            const {id,title} = section
-            <li key={id}>
-              <Link
-              activeClass="active"
-                to={id}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => handleLinkClick(id)}
-              >
-                {title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      {sections.map((section) => (
-        const {id,title,content} = section
-        <Element key={id} name={id} className="section" onSetActive={() => handleSectionScroll(id)}> 
-          <section>
-            <h2>{title}</h2>
-            <p>{content}</p>
-          </section>
-        </Element>
-      ))}
-    </>
-  );
-};
+  const SectionApp: React.FC = () => {
+    return (
+      <>
+        <nav className="navbar">
+          <ul>
+            {sections.map((section) => (
+              <li key={section.id}>
+                <Link
+                  activeClass="active"
+                  to={section.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={() => handleLinkClick(section.id)}
+                >
+                  {section.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+  
+        {sections.map((section) => (
+          <Element
+            key={section.id}
+            name={section.id}
+            className="section"
+            onSetActive={() => handleSectionScroll(section.id)}
+          >
+            <section>
+              <h2>{section.title}</h2>
+              <p>{section.content}</p>
+            </section>
+          </Element>
+        ))}
+      </>
+    );
+  };
+  

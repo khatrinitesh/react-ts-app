@@ -27,7 +27,7 @@ const calculateTimeLeft = () => {
   return timeLeft;
 };
 
-const CSPage:React:FC = () => {
+const CSPage:React.FC = () => {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     useEffect(() => {
         const timer = setTimeout(() => {

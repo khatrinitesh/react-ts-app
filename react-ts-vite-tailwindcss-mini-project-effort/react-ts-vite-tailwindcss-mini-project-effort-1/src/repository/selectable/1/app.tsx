@@ -29,7 +29,7 @@ interface SelectableProps {
 const Selectable: React.FC<SelectableProps> = ({ items }) => {
     const [selectedItems, setSelectedItems] = useState<Item[]>([]);
 
-    const handleItemClick = (item: Item) => r{
+    const handleItemClick = (item: Item) => {
       const isSelected = selectedItems.some((selectedItem) => selectedItem.id === item.id);
   
       if (isSelected) {

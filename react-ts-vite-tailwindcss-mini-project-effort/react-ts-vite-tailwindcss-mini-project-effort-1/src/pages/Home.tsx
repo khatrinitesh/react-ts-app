@@ -1,7 +1,8 @@
 // import CustomApp from '../components/fetchdata/2/app';
 // import Banner from "../components/Banner";
 
-import App from "../repository/animatedbuttons/3/App";
+import App from "../repository/formvalidation/2/Example";
+
 
 
 function Home() {
