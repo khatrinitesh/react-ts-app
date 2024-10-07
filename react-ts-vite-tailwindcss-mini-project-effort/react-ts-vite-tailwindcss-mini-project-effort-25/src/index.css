@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.appLayout{
+    @apply grid grid-rows-[auto_1fr_auto] h-[100dvh];
+}
