@@ -1,4 +1,4 @@
-export interface BannerProps{
+export interface nBannerProps{
     title:string;
     description:string;
 }
