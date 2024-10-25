@@ -1,0 +1,8 @@
+
+.box{
+    background-color: #002856;
+  color: #fff;
+  border-radius: 0.5em;
+  border: 2px solid black;
+  box-decoration-break:clone;
+}

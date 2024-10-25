@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+
+  .services{
+    padding:50px;
+    box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+    border-radius:10px;
+  }
+  
+.services .service-item svg {
+    transition: all .5s;
+    float: left;
+    font-size: 64px;
+    color: #43ba7f;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.services .iconBox  svg{
+    color:#43ba7f;
+    font-size:40px;
+}
+
+.services .service-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
+}
+
+.iconBox{
+    width:20%;
+}
+
+.service-item{
+    width:calc(100% - 20%);
+}

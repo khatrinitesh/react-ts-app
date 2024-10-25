@@ -1,6 +1,10 @@
 import React,{ useState } from 'react';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from "@fontwesome/react-fontawesome";
+
+
 
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';

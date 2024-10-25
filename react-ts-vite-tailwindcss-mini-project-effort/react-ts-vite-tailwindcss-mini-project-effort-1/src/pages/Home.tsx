@@ -1,6 +1,7 @@
 // import CustomApp from '../components/fetchdata/2/app';
 // import Banner from "../components/Banner";
-import FinalApp from './../repository/arrows/2/app';
+
+import FinalApp from "../repository/feature/2/CustomApp";
 
 
 

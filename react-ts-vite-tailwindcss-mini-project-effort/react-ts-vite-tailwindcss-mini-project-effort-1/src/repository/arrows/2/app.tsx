@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "./Arrow.module.css"
 
 const FinalApp = () => {
   return (
