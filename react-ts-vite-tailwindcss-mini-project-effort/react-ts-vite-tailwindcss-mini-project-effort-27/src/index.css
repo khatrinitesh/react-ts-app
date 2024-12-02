@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container for the search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+/* Style for the search button (magnifying glass) */
+.toggle-search-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Animated search bar container */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+/* Style for the input field */
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style for the reset button */
+.reset-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+
+/* Alert component */
+.alert {
+  padding: 16px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.alert-success {
+  background-color: #28a745; /* Green */
+}
+
+.alert-warning {
+  background-color: #ffc107; /* Yellow */
+}
+
+.alert-info {
+  background-color: #17a2b8; /* Blue */
+}
+
+.show-alert {
+  display: block;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.message {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  gap: 16px;
+}
+
+.alert-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.alert-success-button {
+  background-color: #28a745; /* Green */
+}
+
+.alert-warning-button {
+  background-color: #ffc107; /* Yellow */
+}
+
+.alert-info-button {
+  background-color: #17a2b8; /* Blue */
+}
+
+.alert-button:hover {
+  opacity: 0.9;
+}
