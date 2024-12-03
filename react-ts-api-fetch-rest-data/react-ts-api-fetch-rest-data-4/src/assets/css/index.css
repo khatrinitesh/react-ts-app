@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    padding:0 1rem;
+}
+
+.bodyWrapper,.rootWrapper{
+    height: 100vh;
+}
+
+.appLayout{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+:is(.subtitle,.lineDesc){
+    color:red;
+}
