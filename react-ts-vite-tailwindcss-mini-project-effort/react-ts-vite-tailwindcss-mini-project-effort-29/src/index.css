@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    padding:0 1rem;
+}
+
+.bodyWrapper,.rootWrapper{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+/* Add custom slider styles */
+.slider {
+    width: 200px;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    appearance: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
