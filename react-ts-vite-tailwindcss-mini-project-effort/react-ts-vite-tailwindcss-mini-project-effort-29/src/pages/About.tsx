@@ -15,6 +15,13 @@ import BulletList from '../components/BulletList';
 import BgColor from '../components/BgColor';
 import ChangeBgScroll from '../components/ChangeBgScroll';
 import CharacterCounter from '../components/CharacterCounter';
+import CheckCheckbox from '../components/CheckCheckbox';
+import CheckoutForm from '../components/CheckoutForm';
+import CircleMenu from './CircleMenu';
+import CircleDots from './CircleDots';
+import ClayMorphism from '../components/ClayMorphism';
+import ClearIputField from '../components/ClearIputField';
+import ClickDropdowns from '../components/ClickDropdowns';
 
 const About = () => {
   const { avatarUrl ,setAvatarUrl} = useAvatarImgStore();  
@@ -30,6 +37,20 @@ const About = () => {
   return (
     <div className='content'>
       <Banner title='about' description='Voluptate tempor sit et deserunt fugiat in tempor proident.'/>
+      <ClickDropdowns/>
+      <hr/>
+      <ClearIputField/>
+      <hr/>
+      <ClayMorphism/>
+      <hr/>
+      <CircleDots/>
+      <hr/>
+      <CircleMenu/>
+      <hr/>
+      <CheckoutForm/>
+      <hr/>
+      <CheckCheckbox/>
+      <hr/>
       <CharacterCounter/>
       <hr/>
       <ChangeBgScroll/>

@@ -84,3 +84,45 @@ export interface CharacterCounterProps{
     count:number;
     setCount:(count:number) => void;
 }
+
+export interface CheckedProps{
+    isChecked:boolean;
+    toggleChecked:() => void;
+}
+
+export interface CheckoutStateProps {
+    name: string;
+    email: string;
+    address: string;
+    setName: (name: string) => void;
+    setEmail: (email: string) => void;
+    setAddress: (address: string) => void;
+  }
+  
+  export interface MenuProps{
+    isMenuOpen:boolean,
+    toggleMenu:() => void;
+  }
+
+  export interface CircleDotsProps{
+    isAnimating:boolean;
+    toggleAnimation :() => void;
+  }
+
+  export interface ClayProps{
+    isModalOpen:boolean;
+    toggleModal:() => void;
+  }
+
+  export interface ClearInputFieldProps{
+    isFieldInput:string; 
+    setIsFieldInput:(value:string) => void;
+    clearInput:() => void;
+  }
+
+  export interface ClickDropdownsProps{
+    isDropdownOpen:boolean;
+    toggleDropdown:() => void;
+  }
+
+  

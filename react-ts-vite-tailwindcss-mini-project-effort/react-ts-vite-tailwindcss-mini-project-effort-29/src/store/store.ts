@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BgDropDownMenu, BlurImages, ChangeBgScrollProps, CharacterCounterProps, ListState } from "../interface";
+import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BgDropDownMenu, BlurImages, ChangeBgScrollProps, CharacterCounterProps, CheckedProps, CheckoutState, CheckoutStateProps, CircleDotsProps, ClayProps, ClearInputFieldProps, ClickDropdownsProps, ListState, MenuProps } from "../interface";
 
 
 // alert button
@@ -72,4 +72,52 @@ export const useBgColorScrollStore = create<ChangeBgScrollProps>((set) => ({
 export const useCounterCharacterStore = create<CharacterCounterProps>((set) => ({
   count:0,
   setCount:(count) => set({count})
+})) 
+
+export const useCheckedStore = create<CheckedProps>((set) => ({
+  isChecked:false,
+  toggleChecked:() => set((state) => ({isChecked:!state.isChecked}))
+}))
+
+export const useCheckoutFormStore = create<CheckoutStateProps>((set) => ({
+  name: '',
+  email: '',
+  address: '',
+  setName: (name) => set(() => ({ name })),
+  setEmail: (email) => set(() => ({ email })),
+  setAddress: (address) => set(() => ({ address })),
+}));
+
+export const useCircleMenuStore = create<MenuProps>((set) => ({
+  isMenuOpen:false,
+  toggleMenu: () => set((state) => ({ isMenuOpen: !state.isMenuOpen })),
+}))
+
+
+export const useCircleDotsStore = create<CircleDotsProps>((set) => ({
+  isAnimating:false,
+  toggleAnimation :() => set((state) => ({
+    isAnimating:!state.isAnimating
+  }))
+}))
+
+export const useClayStore = <ClayProps>((set) => ({
+  isModalOpen:false,
+  toggleModal:() => set((state) => ({
+    isModalOpen:!state.isModalOpen
+  }))
+}))
+
+
+export const useClearInputFieldStore = create<ClearInputFieldProps>((set) => ({
+  isFieldInput: '', // Initial value of the input
+  setIsFieldInput: (value: string) => set({ isFieldInput: value }), // Function to set input value
+  clearInput: () => set({ isFieldInput: '' }), // Function to clear input value
+}));
+
+export const useClickDropdownsStore = create<ClickDropdownsProps>((set) => ({
+  isDropdownOpen:false,
+  toggleDropdown:() => set((state) => ({
+    isDropdown:!state.isDropdown
+  }))
 }))
