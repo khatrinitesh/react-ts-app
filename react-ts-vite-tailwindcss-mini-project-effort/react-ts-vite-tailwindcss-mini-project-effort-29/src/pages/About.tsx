@@ -8,11 +8,13 @@ import Arrows from '../components/Arrows';
 import Autocomplete from '../components/Autocomplete';
 import { autocompleteData, avatarImages } from '../constants/constants';
 import AvatarImg from '../components/AvatarImg';
-import { useAvatarImgStore, useBgDropDownMenuStore, useBlurImgStore } from '../store/store';
+import { useAvatarImgStore, useBlurImgStore } from '../store/store';
 import { motion } from 'framer-motion';
 import BackgroundBlurImg from '../components/BackgroundBlurImg';
 import BulletList from '../components/BulletList';
 import BgColor from '../components/BgColor';
+import ChangeBgScroll from '../components/ChangeBgScroll';
+import CharacterCounter from '../components/CharacterCounter';
 
 const About = () => {
   const { avatarUrl ,setAvatarUrl} = useAvatarImgStore();  
@@ -24,12 +26,15 @@ const About = () => {
     }
   }, [avatarUrl, setAvatarUrl]);
 
-  const backgroundIColor = useBgDropDownMenuStore((state) => state.backgroundIColor);
 
   return (
     <div className='content'>
       <Banner title='about' description='Voluptate tempor sit et deserunt fugiat in tempor proident.'/>
-      <div style={{ backgroundIColor, minHeight: '100vh' }}>
+      <CharacterCounter/>
+      <hr/>
+      <ChangeBgScroll/>
+      <hr/>
+      <div style={{ minHeight: '100vh' }}>
       <BgColor/>
       </div>
       <hr/>

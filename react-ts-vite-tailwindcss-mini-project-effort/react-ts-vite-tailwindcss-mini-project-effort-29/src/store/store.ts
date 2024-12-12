@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BlurImages, ListState } from "../interface";
+import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BgDropDownMenu, BlurImages, ChangeBgScrollProps, CharacterCounterProps, ListState } from "../interface";
 
 
 // alert button
@@ -59,7 +59,17 @@ export const useListStore = create<ListState>((set) => ({
   }))
 }))
 
-export const useBgDropDownMenuStore = create((set) => ({
-    backgroundIColor:'white',// default bg color
-    setBackgroundColor:(color:string) => set({backgroundIColor:color})
+export const useBgDropDownMenuStore = create<BgDropDownMenu>((set) => ({
+  backgroundColor:'white',// default bg color
+    setBackgroundColor:(color:string) => set({backgroundColor:color})
+}))
+
+export const useBgColorScrollStore = create<ChangeBgScrollProps>((set) => ({
+  backgroundColor:'orange', // default bg color 
+  setBackgroundColor:(color:string) => set({backgroundColor:color})
+}))
+
+export const useCounterCharacterStore = create<CharacterCounterProps>((set) => ({
+  count:0,
+  setCount:(count) => set({count})
 }))

@@ -70,9 +70,17 @@ export interface ListState{
     toggleItem:(id:number) => void;
     removeItem:(id:number) => void;
 }
-
-
 export interface BgDropDownMenu{
-    backgroundIColor:string;
+    backgroundColor:string;
     setBackgroundColor:(color:string) => void;
+}
+
+export interface ChangeBgScrollProps{
+    backgroundColor:string;
+    setBackgroundColor:(color:string) => void;
+}
+
+export interface CharacterCounterProps{
+    count:number;
+    setCount:(count:number) => void;
 }
