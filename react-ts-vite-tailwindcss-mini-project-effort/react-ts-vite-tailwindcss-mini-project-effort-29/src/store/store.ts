@@ -1,5 +1,6 @@
 import { create } from "zustand";
-import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BgDropDownMenu, BlurImages, ChangeBgScrollProps, CharacterCounterProps, CheckedProps, CheckoutState, CheckoutStateProps, CircleDotsProps, ClayProps, ClearInputFieldProps, ClickDropdownsProps, ListState, MenuProps } from "../interface";
+import { AlertStore, AnimateIconStore, ArrowStore, AutocompleteStore, AvatarState, BgDropDownMenu, BlurImages, ChangeBgScrollProps, CharacterCounterProps, CheckedProps, CheckoutState, CheckoutStateProps, CircleDotsProps, ClayProps, ClearInputFieldProps, ClickDropdownsProps, ColorPickerProps, ListState, MenuProps } from "../interface";
+import { CountDownProps } from './../interface/index';
 
 
 // alert button
@@ -120,4 +121,46 @@ export const useClickDropdownsStore = create<ClickDropdownsProps>((set) => ({
   toggleDropdown:() => set((state) => ({
     isDropdown:!state.isDropdown
   }))
+}))
+
+export const useColorPickerStore = create<ColorPickerProps>((set) => ({
+  color:'red',
+  setColor:(color:string) => set({color})
+}))
+
+export const useCopyTxtStore = create<CopyTxtProps>((set) => ({
+  showBox:true,
+  toggleBox:() => set((state) => ({showBox:!state.showBox}))
+}))
+
+export const useTimerStore = create<CountDownProps>((set) => ({
+  timeLeft: 0,
+  isActive: false,
+  intervalId: null,
+  startTimer: (seconds: number) => {
+    set({ timeLeft: seconds, isActive: true });
+    const intervalId = setInterval(() => {
+      set((state) => {
+        if (state.timeLeft <= 1) {
+          clearInterval(state.intervalId as NodeJS.Timeout);
+          return { isActive: false, intervalId: null, timeLeft: 0 };
+        }
+        return { timeLeft: state.timeLeft - 1 };
+      });
+    }, 1000);
+
+    set({ intervalId });
+  },
+  stopTimer: () => {
+    set((state) => {
+      if (state.intervalId) clearInterval(state.intervalId);
+      return { isActive: false, intervalId: null };
+    });
+  },
+  resetTimer: () => {
+    set({ timeLeft: 0, isActive: false, intervalId: null });
+  },
+  updateTimeLeft: () => {
+    set((state) => ({ timeLeft: state.timeLeft - 1 }));
+  },
 }))

@@ -22,6 +22,9 @@ import CircleDots from './CircleDots';
 import ClayMorphism from '../components/ClayMorphism';
 import ClearIputField from '../components/ClearIputField';
 import ClickDropdowns from '../components/ClickDropdowns';
+import ColorPicker from '../components/ColorPicker';
+import CopyTxtClipboard from '../components/CopyTxtClipboard';
+import CountDown from '../components/CountDown';
 
 const About = () => {
   const { avatarUrl ,setAvatarUrl} = useAvatarImgStore();  
@@ -36,7 +39,13 @@ const About = () => {
 
   return (
     <div className='content'>
-      <Banner title='about' description='Voluptate tempor sit et deserunt fugiat in tempor proident.'/>
+      <Banner title='about' description='Voluptate tempor sit et deserunt fugiat in tempor proident.'/>'
+      <CountDown/>
+      <hr/>
+      <CopyTxtClipboard/>
+      <hr/>
+      <ColorPicker/>
+      <hr/>
       <ClickDropdowns/>
       <hr/>
       <ClearIputField/>

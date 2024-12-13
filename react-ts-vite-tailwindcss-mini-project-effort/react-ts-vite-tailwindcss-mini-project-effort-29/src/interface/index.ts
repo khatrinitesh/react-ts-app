@@ -125,4 +125,22 @@ export interface CheckoutStateProps {
     toggleDropdown:() => void;
   }
 
+  export interface ColorPickerProps{
+    color:string;
+    setColor:() => void;
+  }
   
+  export interface CopyTxtProps{
+    showBox:boolean ;
+    toggleBox:() => void;
+  }
+
+  export const CountDownProps{
+    timeLeft: number; // Time left in seconds
+  isActive: boolean; // Whether the timer is running
+  intervalId: NodeJS.Timeout | null; // Interval for the timer
+  startTimer: (seconds: number) => void; // Start the timer with a specific duration
+  stopTimer: () => void; // Stop the timer
+  resetTimer: () => void; // Reset the timer to its initial state
+  updateTimeLeft: () => void; // Update the time left
+  }
