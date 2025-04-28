@@ -1,0 +1,20 @@
+/* tailwind library */
+@import "tailwindcss";
+
+
+/* below custom css coding */
+.bodyWrapper,.rootWrapper{
+  height: 100dvh;
+  min-height: 100dvh;
+}
+
+/* Typography Style Guide Components */
+:root{
+  
+}
+
+.appLayout{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
