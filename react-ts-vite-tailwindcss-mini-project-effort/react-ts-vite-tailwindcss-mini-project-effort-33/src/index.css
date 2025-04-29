@@ -1,0 +1,39 @@
+.accordion-item.activeClass{
+  background-color: green;
+  color:#fff;
+}
+
+/* Alert.css */
+.alert-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 9999;
+}
+
+.alert {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.alert-success {
+  background-color: #22c55e;
+}
+
+.alert-error {
+  background-color: #ef4444;
+}
+
+.alert-info {
+  background-color: #3b82f6;
+}
+
+.alert-warning {
+  background-color: #f59e0b;
+}
