@@ -40,3 +40,7 @@ export interface AlertState{
     addAlert:(message:string,type:AlertType) => void;
     removeAlert:(id:number)=> void;
 }
+
+export interface IconAnimationProps{
+    isActive:boolean;
+}

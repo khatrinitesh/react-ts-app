@@ -40,3 +40,10 @@ export const accData: AccordionItem[] = [
     INFO:'info',
     WARNING:'warning'
   } as const;
+
+
+  export const ICON_ANIMATION_DURATION = 0.3;
+  export const ICON_VARIANTS = {
+    initial: { rotate: 0, scale: 1 },
+    animated: { rotate: 180, scale: 1.2 },
+  }

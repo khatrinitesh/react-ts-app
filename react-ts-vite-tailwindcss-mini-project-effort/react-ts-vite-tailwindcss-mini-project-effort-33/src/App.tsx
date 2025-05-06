@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
-import { useAlertStore } from './store/useAlertStore';
-import Alert from './components/Alert';
+import AnimatedIcon from './components/AnimatedIcon';
 
 function App() {
 
-  const { addAlert } = useAlertStore();
 
   return (
     <>
-      <button onClick={() => addAlert('This is a success!', 'SUCCESS')}>Success</button>
-      <button onClick={() => addAlert('Something went wrong.', 'ERROR')}>Error</button>
-      <Alert />
+      <AnimatedIcon/>
     </>
   )
 }

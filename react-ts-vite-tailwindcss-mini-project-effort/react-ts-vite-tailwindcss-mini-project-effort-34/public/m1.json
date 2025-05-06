@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Global Markets Rally on Economic Optimism",
+      "description": "Stock markets around the world surged today amid positive economic data.",
+      "date": "2025-04-28",
+      "source": "Reuters"
+    },
+    {
+      "id": 2,
+      "title": "Tech Giants Unveil Next-Gen AI Processors",
+      "description": "Several major tech firms have announced new AI chips promising better efficiency.",
+      "date": "2025-04-28",
+      "source": "TechCrunch"
+    },
+    {
+      "id": 3,
+      "title": "New Climate Agreement Reached at Global Summit",
+      "description": "Leaders signed a new pact to reduce global emissions over the next decade.",
+      "date": "2025-04-27",
+      "source": "BBC News"
+    }
+  ]
+  
