@@ -1,0 +1,117 @@
+section {
+    position: relative;
+    width: 100%;
+  }
+  section.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    max-width: 30em;
+    min-width: 15em;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  section.main > header {
+    color: #fff;
+    background: #1e7b1e;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+  section > section {
+    border-bottom: 1px solid #d6f5d6;
+  }
+  section > section:last-child {
+    border: none;
+  }
+  section > div {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+  }
+  section button {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    width: 3em;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-indent: -9999%;
+    pointer-events: none;
+  }
+  section button:after, section button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 4px;
+    border-radius: 0.3em;
+    background: limegreen;
+    transform-origin: 50%;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  section button:after {
+    transform: translate(-75%, -50%) rotate(-45deg);
+  }
+  section button:before {
+    transform: translate(75%, -50%) rotate(45deg);
+  }
+  section.open button:after, section.open button:before {
+    height: 14px;
+    background: #28a428;
+  }
+  section.open button:after {
+    transform: translate(0%, -50%) rotate(45deg);
+  }
+  section.open button:before {
+    transform: translate(0%, -50%) rotate(-45deg);
+  }
+  section.open header {
+    color: #555;
+  }
+  
+  article,
+  header {
+    padding: 1em;
+    line-height: 1em;
+  }
+  
+  header:not(.title) {
+    width: 100%;
+    overflow: hidden;
+    height: 3em;
+    background: white;
+    cursor: pointer;
+    font-weight: 700;
+    color: #888;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 2.1em;
+  }
+  header:not(.title):hover {
+    background: #ebfaeb;
+  }
+  
+  article {
+    line-height: 1.4em;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  article img {
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 3px;
+  }
+  article.special h3 {
+    margin: 0.35em 0 0 0;
+    color: #239023;
+    text-align: center;
+  }
