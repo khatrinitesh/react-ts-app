@@ -1,3 +1,34 @@
+export interface TableRow {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+}
+
+export interface CardItem {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface CardItem {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface Avatar {
+  id: number;
+  name: string;
+  imageUrl: string;
+}
+
+
+export interface AutoCompleteOption {
+  id: number;
+  label: string;
+}
+
 export interface NavItem {
   id: string;
   label: string;
