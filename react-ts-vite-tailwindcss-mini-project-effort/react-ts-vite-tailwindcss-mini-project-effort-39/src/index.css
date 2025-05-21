@@ -102,6 +102,7 @@ html,.bodyWrapper{
   height: 100dvh;
   position: relative;
   overflow-x: hidden;
+  font-size: var(--fontBase);
 }
 
 img {
@@ -117,4 +118,42 @@ img {
 
 .slick-prev{
   @apply bg-orange-400
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.btn {
+  position: relative;
+  padding: 10px 20px;
+  background: #eee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: var(--font18);
+}
+
+.btn .highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0070f3;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn.active {
+  color: white;
 }

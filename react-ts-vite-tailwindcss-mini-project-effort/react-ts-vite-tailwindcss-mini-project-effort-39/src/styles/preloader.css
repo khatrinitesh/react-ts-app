@@ -1,0 +1,32 @@
+.preloader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0e5ec;
+}
+
+.preloader-box {
+  background: #e0e5ec;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #babecc, -10px -10px 30px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preloader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #0070f3;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.preloader-message {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
