@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import type { AccordionItem, ButtonOption, NavItem, PricingPlan, ScrollItem, SlideItem, TimelineItem, User } from "../interface";
 
 export const SAMPLE_TEXT1 = "React TypeScript Example";
@@ -61,6 +62,62 @@ export const BUTTON_OPTIONS: ButtonOption[] = [
   { label: "Profile", value: "profile" },
   { label: "Settings", value: "settings" },
 ];
+=======
+import type { AccordionItem, AutoCompleteOption, Avatar, CardItem, NavItem, SlideItem, TimelineItem } from "../interface";
+
+export const TABLE_DATA: TableRow[] = [
+  { id: 1, name: "Alice", email: "alice@example.com", role: "Developer" },
+  { id: 2, name: "Bob", email: "bob@example.com", role: "Designer" },
+  { id: 3, name: "Charlie", email: "charlie@example.com", role: "Manager" },
+];
+
+
+export const CARD_DATA: CardItem[] = [
+  {
+    id: 1,
+    title: "React",
+    description: "A JavaScript library for building user interfaces.",
+  },
+  {
+    id: 2,
+    title: "TypeScript",
+    description: "A typed superset of JavaScript that compiles to plain JavaScript.",
+  },
+  {
+    id: 3,
+    title: "Framer Motion",
+    description: "A powerful library for animations in React.",
+  },
+];
+
+export const AVATARS: Avatar[] = [
+  {
+    id: 1,
+    name: "Alice",
+    imageUrl: "https://i.pravatar.cc/150?img=1",
+  },
+  {
+    id: 2,
+    name: "Bob",
+    imageUrl: "https://i.pravatar.cc/150?img=2",
+  },
+  {
+    id: 3,
+    name: "Charlie",
+    imageUrl: "https://i.pravatar.cc/150?img=3",
+  },
+];
+
+export const AUOTCOMPLETEOPTIONS: AutoCompleteOption[] = [
+  { id: 1, label: "React" },
+  { id: 2, label: "TypeScript" },
+  { id: 3, label: "Zustand" },
+  { id: 4, label: "Framer Motion" },
+  { id: 5, label: "Tailwind CSS" },
+  { id: 6, label: "TanStack Query" },
+];
+
+>>>>>>> c7973706eb6023b89d7becfb13afb1250290a095
 
 export const NAV_ITEMS: NavItem[] = [
   { id: 'item01', label: 'Home', href: '/', className: 'item01' },

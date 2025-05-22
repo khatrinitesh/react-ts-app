@@ -46,10 +46,20 @@ export interface CharAtProps {
 }
 
 export interface ScrollItem {
+export interface TableRow {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+}
+
+export interface CardItem {
+  id: number;
   title: string;
   description: string;
 }
 
+<<<<<<< HEAD
 export interface PricingPlan {
   title: string;
   price: number;
@@ -64,6 +74,24 @@ export interface PreloaderProps {
 export interface ButtonOption {
   label: string;
   value: string;
+=======
+export interface CardItem {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface Avatar {
+  id: number;
+  name: string;
+  imageUrl: string;
+}
+
+
+export interface AutoCompleteOption {
+  id: number;
+  label: string;
+>>>>>>> c7973706eb6023b89d7becfb13afb1250290a095
 }
 
 export interface NavItem {

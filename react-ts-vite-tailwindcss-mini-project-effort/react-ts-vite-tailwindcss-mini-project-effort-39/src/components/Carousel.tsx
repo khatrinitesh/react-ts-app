@@ -15,7 +15,6 @@ const CustomCarousel:React.FC = () => {
         slidesToShow: 3,
         slidesToScroll: 1,  
     };
-
   return (
     <>
         <div className="w-full flex justify-end">
